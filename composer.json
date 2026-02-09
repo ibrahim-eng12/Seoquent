@@ -1,0 +1,52 @@
+{
+    "name": "ibrahim-eng12/seoquent",
+    "description": "Seoquent - A powerful all-in-one Laravel SEO package. Meta tags, Open Graph, Twitter Cards, JSON-LD structured data, sitemap generation, robots.txt, and per-model SEO management.",
+    "keywords": [
+        "laravel",
+        "seo",
+        "meta-tags",
+        "open-graph",
+        "twitter-cards",
+        "json-ld",
+        "schema-org",
+        "sitemap",
+        "robots-txt",
+        "structured-data",
+        "seoquent"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ibrahim",
+            "email": "ibrahim@himacode.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "illuminate/routing": "^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "IbrahimEng12\\Seoquent\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IbrahimEng12\\Seoquent\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IbrahimEng12\\Seoquent\\SeoquentServiceProvider"
+            ],
+            "aliases": {
+                "Seo": "IbrahimEng12\\Seoquent\\Facades\\Seo"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
