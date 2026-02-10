@@ -104,6 +104,8 @@ return [
     | Configure dynamic robots.txt generation.
     | Set 'enabled' to false to use a static robots.txt file instead.
     |
+    | (Laravel's default) robots.txt — the static file public/robots.txt (Laravel's default) was being served by the web server, completely bypassing the seoquent dynamic route. DELETE IT if it exist!
+    |
     */
 
     'robots' => [
